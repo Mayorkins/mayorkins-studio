@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090A0E" data-theme-color>
+  <meta name="color-scheme" content="light dark">
+  <title>Mayorkins Studio — Digital Design & Development</title>
+  <meta name="description" content="Mayorkins Studio designs and develops distinctive websites, digital products, ecommerce experiences and landing pages for ambitious businesses in Nigeria and worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mayorkins Studio — Design boldly. Build intelligently.">
+  <meta property="og:description" content="Websites, digital products, and ecommerce experiences designed to turn ambitious ideas into business results.">
+  <meta property="og:image" content="assets/img/og-cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mayorkins Studio — Design boldly. Build intelligently.">
+  <meta name="twitter:description" content="Independent digital studio. Working worldwide.">
+  <meta name="twitter:image" content="assets/img/og-cover.webp">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/img/mayorkins-mark.png">
+  <link rel="preload" href="assets/fonts/space-grotesk-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    (function () {
+      var theme = 'dark';
+      try {
+        var savedTheme = localStorage.getItem('mayorkins-theme');
+        theme = savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      } catch (error) {
+        theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.dataset.theme = theme;
+      var themeMeta = document.querySelector('meta[data-theme-color]');
+      if (themeMeta) themeMeta.content = theme === 'dark' ? '#090A0E' : '#F1F2EC';
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span data-progress></span></div>
+
+  <header class="site-header" data-header>
+    <nav class="nav-shell wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="Mayorkins Studio home">
+        <img class="wordmark-logo" src="assets/img/mayorkins-studios-logo.png" width="1224" height="298" alt="" fetchpriority="high">
+      </a>
+
+      <div class="nav-links" id="primary-navigation" data-nav-links>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a class="nav-mobile-cta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <a class="button button-lime nav-cta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" data-theme-toggle>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.1A8.4 8.4 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path></svg>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> INDEPENDENT DIGITAL STUDIO <span class="eyebrow-sep">·</span> WORKING WORLDWIDE</p>
+          <h1 id="hero-title" class="hero-title">
+            <span>We make</span>
+            <span>digital</span>
+            <span>experiences</span>
+            <span class="hero-last"><em>impossible</em> to<br>ignore<span class="lime-period">.</span></span>
+          </h1>
+          <p class="hero-description">Websites, digital products, and ecommerce experiences designed to turn ambitious ideas into business results.</p>
+          <div class="hero-actions">
+            <a class="button button-lime button-large" href="#contact">Start a project <span class="arrow-icon" aria-hidden="true">↗</span></a>
+            <a class="text-link hero-work-link" href="#work">Explore our work <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-availability"><span class="availability-signal" aria-hidden="true"></span><span data-availability>Project timing · ask us</span></div>
+        </div>
+
+        <div class="hero-art" role="group" aria-label="Visual previews of selected websites">
+          <div class="art-grid" aria-hidden="true"></div>
+          <div class="hero-stamp"><span>INDEPENDENT</span><span>BY DESIGN</span><b>MS<span>®</span></b></div>
+          <div class="browser-card hero-browser" data-reveal="scale">
+            <div class="browser-topline">
+              <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>aurelia / tourism website</span>
+              <span class="browser-window-icon" aria-hidden="true">↗</span>
+            </div>
+            <div class="hero-browser-image">
+              <img src="assets/img/work/aurelia.webp" alt="Coastal architecture featured on the Aurelia tourism website" width="1536" height="1024" fetchpriority="high">
+              <div class="browser-image-shade"></div>
+              <div class="browser-image-copy"><span>TOURISM WEBSITE</span><strong>Aurelia</strong></div>
+              <div class="browser-scroll-cue"><span>EXPLORE THE WEBSITE</span><b aria-hidden="true">↓</b></div>
+            </div>
+            <div class="browser-foot"><span>AURELIA / TOURISM</span><span>LIVE SITE</span></div>
+          </div>
+          <div class="hero-mini-window">
+            <div class="mini-window-top"><span>THE NEXT GOOD THING</span><span aria-hidden="true">↗</span></div>
+            <div class="mini-window-product"><img src="assets/img/work/munkz.webp" alt="Stylized 3D monkey character featured on the Munkz website" width="1024" height="1536" loading="lazy"><span>MUNKZ</span></div>
+            <div class="mini-window-bottom"><span>NFT WEBSITE</span><b aria-hidden="true">↗</b></div>
+          </div>
+          <div class="hero-art-index"><span>DESIGN</span><i aria-hidden="true"></i><span>DEVELOPMENT</span><i aria-hidden="true"></i><span>DETAIL</span></div>
+          <div class="hero-corner-note"><span class="corner-cross" aria-hidden="true">+</span><span>IDEAS, MADE<br>INTERACTIVE.</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom wrap" aria-label="Studio details">
+        <span>DESIGN BOLDLY. BUILD INTELLIGENTLY.</span>
+        <span class="hero-bottom-center"><i aria-hidden="true"></i> NIGERIA <span>·</span> WORLDWIDE</span>
+        <a href="#statement">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="statement section-pad" id="statement" aria-labelledby="statement-title">
+      <div class="wrap statement-grid">
+        <p class="eyebrow" data-reveal><span class="eyebrow-mark" aria-hidden="true"></span> THE POINT OF GOOD DESIGN</p>
+        <h2 id="statement-title" data-reveal>Good design gets attention. Great digital experiences give people a <em>reason to act.</em></h2>
+        <span class="statement-index" aria-hidden="true">01 / 06</span>
+      </div>
+      <div class="statement-rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="work section-pad" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading work-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> VIEW OUR PAST WORKS</p>
+            <h2 id="work-title">View our past<br><em>works.</em></h2>
+          </div>
+          <p class="section-intro">A collection of websites across restaurants, tourism, travel, NFTs, fashion, real estate, 3D cartoons, comics, and portfolios. Open any card to explore.</p>
+        </div>
+
+        <div class="past-work-grid">
+          <article class="past-work-card past-work-card--wide past-work-card--elan" data-reveal>
+            <a class="past-work-visual" href="projects/elan-estates/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Élan Estates studio concept in a new tab">
+              <img src="assets/img/work/elan-estates.webp" alt="Preview of the Élan Estates real-estate website concept" width="1440" height="900" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">REAL ESTATE <span aria-hidden="true">·</span> STUDIO CONCEPT</p><h3>Élan Estates</h3></div>
+              <a class="past-work-action" href="projects/elan-estates/index.html" target="_blank" rel="noopener noreferrer">Explore concept <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--cravehouse" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/cravehouse-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Cravehouse restaurant website in a new tab">
+              <img src="assets/img/work/cravehouse.webp" alt="A burger cover image used for the Cravehouse restaurant website" width="1024" height="1536" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">RESTAURANT WEBSITE</p><h3>Cravehouse</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/cravehouse-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Cravehouse restaurant website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--wide past-work-card--aurelia" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/aurelia-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurelia tourism website in a new tab">
+              <img src="assets/img/work/aurelia.webp" alt="Coastal architecture featured on the Aurelia tourism website" width="1536" height="1024" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">TOURISM WEBSITE</p><h3>Aurelia</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/aurelia-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurelia tourism website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--aurelia-v2" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/aurelia-v2-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurelia V2 travel website in a new tab">
+              <img src="assets/img/work/aurelia-v2.webp" alt="A corridor of red torii gates featured on the Aurelia V2 travel website" width="1122" height="1402" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">TRAVEL WEBSITE</p><h3>Aurelia V2</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/aurelia-v2-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Aurelia V2 travel website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--munkz" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/munkz-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Munkz NFT website in a new tab">
+              <img src="assets/img/work/munkz.webp" alt="A stylized 3D monkey character in a lime jacket for the Munkz NFT website" width="1024" height="1536" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">NFT WEBSITE</p><h3>Munkz</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/munkz-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Munkz NFT website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--luxy" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/luxy-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Luxy luxury fashion website in a new tab">
+              <img src="assets/img/work/luxy.webp" alt="Fashion model wearing a dark coat in a minimalist stone setting for Luxy" width="1024" height="1536" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">LUXURY FASHION WEBSITE</p><h3>Luxy</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/luxy-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Luxy luxury fashion website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--charm3d" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/charm3d-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Charm 3D cartoon website in a new tab">
+              <img src="assets/img/work/charm3d.webp" alt="A colorful 3D cartoon character featured on the Charm 3D website" width="1024" height="1536" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">3D CARTOON WEBSITE</p><h3>Charm 3D</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/charm3d-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Charm 3D cartoon website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--wide past-work-card--elane" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/elane-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Elane luxury website in a new tab">
+              <img src="assets/img/work/elane.webp" alt="A sunlit coastal home featured on the Elane luxury website" width="1536" height="1024" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">LUXURY WEBSITE</p><h3>Elane</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/elane-site/" target="_blank" rel="noopener noreferrer" aria-label="Open the Elane luxury website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--wide past-work-card--portfolio" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Open the Mayorkins portfolio website in a new tab">
+              <img src="assets/img/work/mayorkins-portfolio.webp" alt="Mayowa Emmanuel portrait featured on the Mayorkins portfolio website" width="1448" height="1086" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">PORTFOLIO WEBSITE</p><h3>Mayorkins Portfolio</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Open the Mayorkins portfolio website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="past-work-card past-work-card--poster past-work-card--nova-city" data-reveal>
+            <a class="past-work-visual" href="https://mayorkins.github.io/nova-city/" target="_blank" rel="noopener noreferrer" aria-label="Open the NOVA CITY comic website in a new tab">
+              <img src="assets/img/work/nova-city.webp" alt="Cover art for the Sunspark Squad comic featured on NOVA CITY" width="1024" height="1536" loading="lazy">
+              <span class="past-work-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="past-work-info">
+              <div><p class="past-work-type">COMIC WEBSITE</p><h3>NOVA CITY</h3></div>
+              <a class="past-work-action" href="https://mayorkins.github.io/nova-city/" target="_blank" rel="noopener noreferrer" aria-label="Open the NOVA CITY comic website in a new tab">Open website <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="work-integrity"><span aria-hidden="true">+</span> Élan Estates is a self-initiated studio concept. The other cards link to the websites supplied for this portfolio; project labels stay descriptive and neutral.</p>
+      </div>
+    </section>
+
+    <section class="services section-pad section-contrast" id="services" aria-labelledby="services-title">
+      <div class="wrap services-layout">
+        <div class="services-intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> WHAT WE DO</p>
+          <h2 id="services-title">From first idea to <em>finished experience.</em></h2>
+          <p class="section-intro">The right scope depends on the challenge. We can help define it before the work begins.</p>
+          <a class="text-link service-cta" href="#contact">Not sure what your project needs? Let's figure it out <span aria-hidden="true">↗</span></a>
+          <div class="services-side-note"><span class="side-note-rule" aria-hidden="true"></span><span>ONE STUDIO.<br>THE RIGHT TEAM<br>FOR THE BRIEF.</span></div>
+        </div>
+        <div class="service-list" data-reveal>
+          <details class="service-row" open>
+            <summary><span class="service-number">01</span><span class="service-title">Website design &amp; development</span><span class="service-cross" aria-hidden="true"></span></summary>
+            <div class="service-copy"><p>Custom websites that communicate your value, build trust, and make it easier for customers to take the next step.</p><span>Brand-led websites <i>·</i> Responsive builds <i>·</i> Content structure</span></div>
+          </details>
+          <details class="service-row">
+            <summary><span class="service-number">02</span><span class="service-title">UI/UX design</span><span class="service-cross" aria-hidden="true"></span></summary>
+            <div class="service-copy"><p>User flows, wireframes, prototypes, and polished interfaces built around real user needs.</p><span>Research &amp; flows <i>·</i> Wireframes <i>·</i> Prototypes</span></div>
+          </details>
+          <details class="service-row">
+            <summary><span class="service-number">03</span><span class="service-title">Ecommerce experiences</span><span class="service-cross" aria-hidden="true"></span></summary>
+            <div class="service-copy"><p>Thoughtful online storefronts that help customers discover products, understand their options, and complete purchases.</p><span>Storefronts <i>·</i> Product journeys <i>·</i> Checkout UX</span></div>
+          </details>
+          <details class="service-row">
+            <summary><span class="service-number">04</span><span class="service-title">Landing pages</span><span class="service-cross" aria-hidden="true"></span></summary>
+            <div class="service-copy"><p>Focused landing pages that communicate a clear offer and guide visitors towards one meaningful action.</p><span>Campaign pages <i>·</i> Product launches <i>·</i> Lead capture</span></div>
+          </details>
+          <details class="service-row">
+            <summary><span class="service-number">05</span><span class="service-title">Website redesign &amp; support</span><span class="service-cross" aria-hidden="true"></span></summary>
+            <div class="service-copy"><p>Improve an existing website's visual quality, usability, structure, and maintainability.</p><span>Design refresh <i>·</i> UX improvements <i>·</i> Ongoing care</span></div>
+          </details>
+          <p class="technology-note"><span>TECHNOLOGY, BY BRIEF</span><span>WordPress <i>·</i> Shopify <i>·</i> React <i>·</i> modern frontend tools</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="process" aria-labelledby="process-title">
+      <div class="wrap process-layout">
+        <div class="process-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> HOW WE WORK</p>
+          <h2 id="process-title">Clear thinking.<br><em>Thoughtful execution.</em></h2>
+          <p class="section-intro">A straightforward process keeps the work clear, collaborative, and moving in the right direction.</p>
+          <span class="process-side-index">THE APPROACH <i> / </i> 01—04</span>
+        </div>
+        <ol class="process-list">
+          <li class="process-step is-active" data-step data-reveal>
+            <span class="process-marker" aria-hidden="true">01</span>
+            <div><p class="step-kicker">LISTEN FIRST</p><h3>Discover</h3><p>Understand the business, audience, goals, constraints, and what success needs to mean for this project.</p></div>
+            <span class="step-arrow" aria-hidden="true">↘</span>
+          </li>
+          <li class="process-step" data-step data-reveal>
+            <span class="process-marker" aria-hidden="true">02</span>
+            <div><p class="step-kicker">MAKE IT MAKE SENSE</p><h3>Design</h3><p>Develop the structure, user flows, visual direction, and interactive prototypes before committing to a build.</p></div>
+            <span class="step-arrow" aria-hidden="true">↘</span>
+          </li>
+          <li class="process-step" data-step data-reveal>
+            <span class="process-marker" aria-hidden="true">03</span>
+            <div><p class="step-kicker">DETAIL MEETS FUNCTION</p><h3>Build</h3><p>Translate the approved design into a functional, responsive website or digital product with practical implementation in mind.</p></div>
+            <span class="step-arrow" aria-hidden="true">↘</span>
+          </li>
+          <li class="process-step" data-step data-reveal>
+            <span class="process-marker" aria-hidden="true">04</span>
+            <div><p class="step-kicker">CHECK. REFINE. RELEASE.</p><h3>Refine &amp; launch</h3><p>Test key interactions, fix issues, check the experience across screen sizes, and prepare the project for launch.</p></div>
+            <span class="step-arrow" aria-hidden="true">↗</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="principles section-pad section-contrast" aria-labelledby="principles-title">
+      <div class="wrap principles-layout">
+        <div class="principles-lead" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> THE STUDIO STANDARD</p>
+          <h2 id="principles-title">Design decisions should <em>serve a purpose.</em></h2>
+          <p class="principles-note">The best-looking answer is only right when it also works for the people using it—and the business behind it.</p>
+        </div>
+        <div class="principle-list" data-reveal>
+          <article class="principle-item"><span class="principle-number">01</span><div><h3>Design with intention</h3><p>Visual choices support clarity, usability, and a distinct brand identity.</p></div><span class="principle-mark" aria-hidden="true">+</span></article>
+          <article class="principle-item"><span class="principle-number">02</span><div><h3>Development-aware design</h3><p>Interfaces are considered alongside implementation and long-term maintainability.</p></div><span class="principle-mark" aria-hidden="true">+</span></article>
+          <article class="principle-item"><span class="principle-number">03</span><div><h3>Business-minded execution</h3><p>We think about what the experience needs to communicate—and help people accomplish.</p></div><span class="principle-mark" aria-hidden="true">+</span></article>
+          <article class="principle-item"><span class="principle-number">04</span><div><h3>Collaborative delivery</h3><p>Clear communication, useful feedback, and defined milestones keep the work shared.</p></div><span class="principle-mark" aria-hidden="true">+</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="wrap about-layout">
+        <figure class="about-art about-portrait-card" data-reveal="scale">
+          <img class="about-portrait" src="assets/img/mayowa.webp" alt="Portrait of Mayowa Emmanuel, co-owner of Mayorkins Studio" width="1448" height="1086" loading="lazy">
+          <div class="about-photo-shade" aria-hidden="true"></div>
+          <div class="about-art-grid" aria-hidden="true"></div>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> THE PEOPLE BEHIND THE STUDIO</p>
+          <span class="about-art-index">CO-OWNERS / 01—02</span>
+          <figcaption class="about-art-caption"><strong>Mayowa Emmanuel</strong><span>CO-OWNER · UI/UX + WEB DEVELOPMENT</span></figcaption>
+        </figure>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> ABOUT MAYORKINS</p>
+          <h2 id="about-title">Small studio.<br><em>Thoughtful work.</em><br>Big ambitions.</h2>
+          <p class="about-paragraph">Mayorkins Studio brings design thinking, web development, and business automation together to help businesses build a stronger digital presence. We care about the details, the people using the product, and the business goals behind every project.</p>
+          <p class="about-paragraph about-paragraph-muted">Independent in spirit, collaborative by nature, and working with businesses in Nigeria and around the world.</p>
+          <div class="about-meta"><span><b>01</b> DESIGN + DEVELOPMENT</span><span><b>02</b> NIGERIA / WORLDWIDE</span></div>
+          <div class="about-team" aria-label="Mayorkins Studio co-owners">
+            <p class="eyebrow about-team-label"><span class="eyebrow-mark" aria-hidden="true"></span> THE CO-OWNERS</p>
+            <div class="about-team-list">
+              <article class="about-person"><span class="about-person-index">01</span><div class="about-person-copy"><h3>Mayowa Emmanuel</h3><p>Co-owner <i>·</i> UI/UX Designer &amp; Web Developer</p></div></article>
+              <article class="about-person"><span class="about-person-index">02</span><div class="about-person-copy"><h3>Akande Daniel</h3><p>Co-owner &amp; Co-founder <i>·</i> Business Automation Specialist</p></div></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="reviews section-pad section-contrast" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section-heading reviews-heading" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> CLIENT FEEDBACK</p>
+            <h2 id="reviews-title">Feedback,<br><em>in their words.</em></h2>
+          </div>
+          <p class="section-intro">Eight reviews, grouped by topic—from website design and communication to technical execution and the overall experience.</p>
+        </div>
+
+        <div class="reviews-carousel" data-review-carousel role="region" aria-roledescription="carousel" aria-label="Client review carousel">
+          <div class="review-track" id="review-track" data-review-track role="group" aria-label="Review cards" tabindex="0">
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Website Design review 1 of 8">
+            <p class="review-card-tag"><span>Website Design</span><b aria-hidden="true">01</b></p>
+            <blockquote class="review-card-copy">Mayowa understood what I wanted and turned the idea into a website that looks clean and is easy to navigate. The final result was well organized and matched the direction we discussed.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Communication review 2 of 8">
+            <p class="review-card-tag"><span>Communication</span><b aria-hidden="true">02</b></p>
+            <blockquote class="review-card-copy">Communication was straightforward throughout the project. I received updates, could share feedback, and felt that my requirements were being taken seriously.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Website Redesign review 3 of 8">
+            <p class="review-card-tag"><span>Website Redesign</span><b aria-hidden="true">03</b></p>
+            <blockquote class="review-card-copy">The redesign gave the website a much clearer structure. The pages feel more consistent, and it is easier for visitors to find the information they need.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="UI/UX Design review 4 of 8">
+            <p class="review-card-tag"><span>UI/UX Design</span><b aria-hidden="true">04</b></p>
+            <blockquote class="review-card-copy">The designs were thoughtfully put together, with good attention to spacing, colors, and usability. The result felt polished without making the interface unnecessarily complicated.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Ecommerce Website review 5 of 8">
+            <p class="review-card-tag"><span>Ecommerce Website</span><b aria-hidden="true">05</b></p>
+            <blockquote class="review-card-copy">The store layout made the products easier to browse, and the overall shopping experience felt more organized. I appreciated the attention given to the customer journey.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Landing Page review 6 of 8">
+            <p class="review-card-tag"><span>Landing Page</span><b aria-hidden="true">06</b></p>
+            <blockquote class="review-card-copy">The landing page communicates the offer much more clearly. The layout guides visitors through the information, and the main call to action is easy to find.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Technical Execution review 7 of 8">
+            <p class="review-card-tag"><span>Technical Execution</span><b aria-hidden="true">07</b></p>
+            <blockquote class="review-card-copy">I appreciated the balance between design and functionality. The website wasn't just visually appealing; the structure and interactions were also considered carefully.</blockquote>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="Overall Experience review 8 of 8">
+            <p class="review-card-tag"><span>Overall Experience</span><b aria-hidden="true">08</b></p>
+            <blockquote class="review-card-copy">Working with Mayowa was a positive experience. He paid attention to the details, listened to feedback, and worked towards delivering something that met the project's needs.</blockquote>
+          </article>
+          </div>
+          <div class="review-controls" data-review-controls hidden>
+            <div class="review-controls-main">
+              <p class="review-status" data-review-status aria-live="polite" aria-atomic="true"></p>
+              <div class="review-control-actions">
+                <button class="review-control" type="button" data-review-prev aria-label="Previous reviews" aria-controls="review-track" disabled><span aria-hidden="true">←</span></button>
+                <button class="review-control" type="button" data-review-next aria-label="Next reviews" aria-controls="review-track"><span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+            <div class="review-dots" data-review-dots role="group" aria-label="Choose reviews"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="proof-band" aria-labelledby="proof-title">
+      <div class="wrap proof-layout" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> WORK YOU CAN INSPECT</p>
+        <div><h2 id="proof-title">No invented numbers.<br><em>Just considered work.</em></h2><p>Open the supplied project websites to explore each experience. Élan Estates is a working, self-initiated real-estate concept—not a client engagement.</p></div>
+        <a class="round-link" href="https://mayorkins.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Open the Mayorkins portfolio in a new tab"><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div class="faq-intro" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> GOOD QUESTIONS</p>
+          <h2 id="faq-title">A few things<br>worth <em>knowing.</em></h2>
+          <p class="section-intro">If your question isn't here, bring it to the first conversation.</p>
+          <a href="#contact" class="text-link">Ask us directly <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list" data-reveal>
+          <details class="faq-item"><summary>What types of businesses do you work with?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Small and growing businesses, founders, ecommerce brands, and teams launching or improving a digital product. The best fit is a project with a clear problem to solve and people willing to work collaboratively.</p></div></details>
+          <details class="faq-item"><summary>What services can I hire Mayorkins Studio for?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Website design and development, UI/UX, ecommerce experiences, focused landing pages, and website redesign or support. We can shape a project around one service or a connected end-to-end scope.</p></div></details>
+          <details class="faq-item"><summary>Can you redesign my existing website?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Yes. We can review what's working, where people get stuck, and what the business needs next—then recommend a visual, structural, or technical scope that fits.</p></div></details>
+          <details class="faq-item"><summary>Do you work with international clients?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Yes. Mayorkins Studio works remotely with businesses in Nigeria and internationally. Project communication and meeting times are agreed together at the start.</p></div></details>
+          <details class="faq-item"><summary>How does the project process work?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>We start by understanding the brief, then agree scope and milestones before moving through discovery, design, build, and refinement. The exact plan depends on the project.</p></div></details>
+          <details class="faq-item"><summary>How much does a website cost?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Pricing depends on scope, complexity, content, integrations, and what needs to be built. Share your brief and an indicative budget, if you have one, and we'll respond with a scope-appropriate estimate.</p></div></details>
+          <details class="faq-item"><summary>Can you provide ongoing support after launch?<span class="faq-icon" aria-hidden="true"></span></summary><div class="faq-answer"><p>Support can be included as a separately scoped arrangement, depending on the platform and what the site needs after launch. We'll make responsibilities and any ongoing costs clear before work begins.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-wrap">
+        <div class="contact-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> START A CONVERSATION</p>
+          <h2 id="contact-title">Have an idea<br>worth <em>building?</em></h2>
+          <p class="contact-lede">Tell us what you're working on. We'll help you turn it into a clear digital plan.</p>
+          <div class="contact-direct" data-contact-links hidden aria-label="Direct contact options"></div>
+          <div class="contact-note" data-contact-note>No public email or direct channel has been configured yet. In this preview, the form prepares a project brief on your device; it does not send it.</div>
+          <div class="contact-graphic" aria-hidden="true"><span>GOOD IDEAS<br>DESERVE<br>GOOD EXECUTION.</span><i></i><b>→</b></div>
+        </div>
+
+        <form class="inquiry-form" id="project-form" novalidate data-reveal>
+          <noscript><p class="form-noscript">JavaScript is disabled, so this brief-builder form is inactive. No enquiry has been sent. Enable JavaScript and configure a verified contact channel or secure form endpoint before launch.</p></noscript>
+          <p class="form-heading">A FEW DETAILS TO GET US STARTED <span>01 / 07</span></p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name">Your name <span>*</span></label>
+              <input id="full-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="name-error" placeholder="How should we address you?">
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">Work email <span>*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error" placeholder="you@company.com">
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="company">Company / business <span class="optional">OPTIONAL</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" maxlength="160" placeholder="Your business name">
+            </div>
+            <div class="form-field">
+              <label for="project-type">What do you need? <span>*</span></label>
+              <select id="project-type" name="projectType" required aria-describedby="project-type-error">
+                <option value="" selected disabled>Select a project type</option>
+                <option>Website design &amp; development</option>
+                <option>UI/UX design</option>
+                <option>Ecommerce experience</option>
+                <option>Landing page</option>
+                <option>Website redesign or support</option>
+                <option>Something else</option>
+              </select>
+              <span class="field-error" id="project-type-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="budget">Indicative budget <span class="optional">OPTIONAL · NGN</span></label>
+              <select id="budget" name="budget">
+                <option value="" selected>Select a range or skip</option>
+                <option>Below ₦500,000</option>
+                <option>₦500,000–₦2,000,000</option>
+                <option>₦2,000,000–₦5,000,000</option>
+                <option>Above ₦5,000,000</option>
+                <option>My budget is in another currency</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="contact-method">How should we reach you? <span class="optional">OPTIONAL</span></label>
+              <select id="contact-method" name="preferredContact">
+                <option value="No preference" selected>No preference</option>
+                <option>Email</option>
+                <option>WhatsApp</option>
+                <option>Other — please note below</option>
+              </select>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="project-brief">Tell us about the project <span>*</span></label>
+              <textarea id="project-brief" name="brief" rows="5" minlength="20" maxlength="5000" required aria-describedby="brief-hint brief-error" placeholder="What's the idea, what does it need to do, and what would a good outcome look like?"></textarea>
+              <div class="field-foot"><span id="brief-hint">A few sentences is a great start. Please don't include sensitive information.</span><span class="field-error" id="brief-error"></span></div>
+            </div>
+          </div>
+          <div class="form-submit-row">
+            <button class="button button-lime button-large submit-button" type="submit" data-submit-button disabled><span data-submit-label>Prepare my project brief</span><span class="arrow-icon" aria-hidden="true">↗</span></button>
+            <p class="privacy-copy" id="privacy-note">Privacy: with no form endpoint configured, nothing is sent or stored here. Submitting prepares a brief file on your device.</p>
+          </div>
+          <div class="form-status" role="status" aria-live="polite" aria-atomic="true" data-form-status></div>
+          <button class="text-link download-again" type="button" data-download-again hidden>Download the brief again <span aria-hidden="true">↓</span></button>
+          <div class="form-followup" data-form-followup></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <a class="wordmark footer-wordmark" href="#top" aria-label="Mayorkins Studio back to top"><img class="wordmark-logo" src="assets/img/mayorkins-studios-logo.png" width="1224" height="298" alt="" loading="lazy"></a>
+      <p>Design boldly.<br>Build intelligently.</p>
+      <div class="footer-nav"><span class="footer-label">EXPLORE</span><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#reviews">Reviews</a></div>
+      <div class="footer-nav footer-contact-nav"><span class="footer-label">SAY HELLO</span><a href="#contact">Start a project <span aria-hidden="true">↗</span></a><div data-footer-contacts></div></div>
+      <a class="back-top" href="#top"><span aria-hidden="true">↑</span> BACK TO TOP</a>
+    </div>
+    <div class="wrap footer-bottom"><span>© <span data-year></span> MAYORKINS STUDIO</span><span>INDEPENDENT DIGITAL STUDIO <i>·</i> NIGERIA / WORLDWIDE</span><span>THOUGHTFULLY DESIGNED. INTENTIONALLY BUILT.</span></div>
+  </footer>
+
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
